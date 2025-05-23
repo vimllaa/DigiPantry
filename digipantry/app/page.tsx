@@ -1,17 +1,34 @@
-import Link from "next/link";
 import CategoryCard from "./components/CategoryCard";
+import NavBar from "./components/Navbar/NavBar";
 
 export default function Home() {
   return (
     <main>
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <h1>Home Page</h1>
-        <Link href="/inventory"> My pantry </Link>
-        <CategoryCard
-          title="Grains"
-          description="Rice, wheat, oats"
-          category="Grains"
-        ></CategoryCard>
+      <div>
+        <NavBar></NavBar>
+
+        <div className="flex align-middle justify-center">
+          <CategoryCard
+            title="Grains"
+            description="This is a short description for this categoryCard, you can add more text here"
+            category="Grains"
+          ></CategoryCard>
+          <CategoryCard
+            title="Grains"
+            description="This is a short description for this categoryCard, you can add more text here"
+            category="Grains"
+          ></CategoryCard>
+          <CategoryCard
+            title="Grains"
+            description="This is a short description for this categoryCard, you can add more text here"
+            category="Grains"
+          ></CategoryCard>
+          <CategoryCard
+            title="Grains"
+            description="This is a short description for this categoryCard, you can add more text here"
+            category="Grains"
+          ></CategoryCard>
+        </div>
       </div>
     </main>
   );
