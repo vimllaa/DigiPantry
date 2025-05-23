@@ -12,7 +12,7 @@ export default function CategoryCard({
   category,
 }: ContentCarProps) {
   return (
-    <div>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg">
       <h1>{title}</h1>
       <p>{description}</p>
       <AddToCategoryButton category={category}></AddToCategoryButton>
