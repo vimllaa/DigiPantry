@@ -12,7 +12,7 @@ export default function CategoryCard({
   category,
 }: ContentCarProps) {
   return (
-    <div className=" flex flex-col bg-neutral-100 rounded-l max-w-max  overflow-hidden shadow-lg ">
+    <div className=" flex flex-col bg-neutral-200 rounded-xl max-w-max overflow-hidden shadow-lg m-4 ">
       <h1>{title}</h1>
       <p>{description}</p>
       <AddToCategoryButton category={category}></AddToCategoryButton>
