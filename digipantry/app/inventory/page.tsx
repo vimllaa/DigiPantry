@@ -1,4 +1,10 @@
+import Counter from "./counter";
 
 export default function Inventory() {
-  return <div>InventoryPage</div>;
+  return (
+    <div>
+      InventoryPage
+      <Counter name="Hello"></Counter>
+    </div>
+  );
 }
